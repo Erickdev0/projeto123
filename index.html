@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Aluno</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Aluno</h1>
+        <form id="cadastro-form">
+            <label for="nome">Nome e Sobrenome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="whatsapp">Whatsapp:</label>
+            <input type="text" id="whatsapp" name="whatsapp" required>
+            
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" required>
+            
+            <label for="modulo">Módulo:</label>
+            <input type="text" id="modulo" name="modulo" required>
+            
+            <label for="github">Link do Github:</label>
+            <input type="url" id="github" name="github" required>
+            
+            <label for="linkedin">Link do LinkedIn:</label>
+            <input type="url" id="linkedin" name="linkedin" required>
+            
+            <button type="button" id="cadastro-button">Cadastrar</button>
+        </form>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Ficha de Aluno</h2>
+            <div id="ficha-conteudo"></div>
+            <button id="print-button">Imprimir Ficha</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
